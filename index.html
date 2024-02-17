@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Protfoilo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad&display=swap" rel="stylesheet">
+
+
+
+
+
+
+
+
+
+    <style>
+        .navbar1 {
+            animation: vibrate-1 0.9s linear infinite both;
+        }
+
+        @keyframes vibrate-1 {
+            0% {
+                transform: translate(0);
+            }
+
+            20% {
+                transform: translate(-2px, 2px);
+            }
+
+            40% {
+                transform: translate(-2px, -2px);
+            }
+
+            60% {
+                transform: translate(2px, 2px);
+            }
+
+            80% {
+                transform: translate(2px, -2px);
+            }
+
+            100% {
+                transform: translate(0);
+            }
+        }
+
+
+        button,images :hover {
+            text-transform: white;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transform: scale(1.01);
+        }
+
+        button:active {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            /* Change to desired active box shadow */
+            transform: scale(.99);
+            /* Change to desired active scale factor */
+        }
+
+
+
+
+        a:hover {
+            text-transform: white;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transform: scale(1.1);
+        }
+
+
+
+
+
+
+
+
+
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: gray;
+            font-family: 'Afacad', sans-serif;
+
+        }
+
+        body fieldset {
+            border: 2px solid wheat;
+            margin: 10px;
+            color: #ffbd39;
+        }
+
+        body legend {
+            padding: 10px;
+            font-size: 20 px;
+            height: auto;
+            color: #ffbd39;
+            text-shadow: 2px 2px black;
+
+        }
+
+        body fieldset {
+            color: white;
+        }
+
+        .education p {
+            color: wheat;
+        }
+
+
+        .education ol {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 50px;
+            align-items: center;
+            flex-wrap: wrap;
+            color: wheat;
+        }
+
+
+        .body {
+            list-style: none;
+        }
+
+
+
+
+        navbar {
+            box-shadow: wheat 1px 1px;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            text-shadow: 2px 2px black;
+
+        }
+
+        navbar .navbar1 {
+            align-items: center;
+            justify-content: center;
+            border: 1px solid none;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            text-shadow: 2px 2px black;
+
+
+        }
+
+        navbar .navbar2 ol {
+            font-size: 20px;
+            border: 1px solid none;
+            color: wheat;
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        navbar .navbar2 ol a {
+            font-size: 20px;
+            border: 1px solid none;
+            color: wheat;
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            text-decoration: none;
+        }
+
+        .hero {
+            margin: 50px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            text-shadow: 4px 4px black;
+
+        }
+
+        .hero .hero1 .img {
+            border-radius: 59%;
+        }
+
+        .hero .hero2 h2 {
+            color: #ffbd39;
+            font-size: 50px;
+        }
+
+        .hero .hero2 h1 {
+            color: #ffbd39;
+            font-size: 50px;
+        }
+
+        .hero .hero2 p {
+            color: wheat;
+            text-shadow: none;
+        }
+
+        .hero .hero2 h1 span {
+            color: white;
+            font-size: 50px;
+        }
+
+        .hero3 {
+            margin: 10px;
+            border: 2px solid none;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .hero3 button {
+            border: 1px solid white;
+            height: 50px;
+            width: 200px;
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
+            background-color: #ffbd39;
+            font-family: 'Afacad', sans-serif;
+        }
+
+
+
+        .hero3 button {
+            border: 1px solid black;
+            height: 50px;
+            width: 200px;
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
+            background-color: #ffbd39;
+            font-family: 'Afacad', sans-serif;
+        }
+
+        .hero3 .download button {
+            color: wheat;
+            border: 1px solid wheat;
+            background-color: rgb(5, 60, 161);
+        }
+
+
+
+
+        .milling {
+            border: 2px solid wheat;
+            margin: 10px;
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            font-size: 70px;
+            font-weight: bold;
+            flex-wrap: wrap;
+        }
+
+        .milling .milling1 {
+            color: #ffbd39;
+            align-items: center;
+            text-align: center;
+        }
+
+        .milling .milling1 span {
+            color: white;
+        }
+
+        .milling .milling2 {
+            align-items: center;
+            text-align: center;
+        }
+
+        .education .h1 {
+            color: #ffbd39;
+        }
+
+
+
+        .projects {
+            margin: 10px;
+        }
+
+        .projects .projects1 {
+            text-align: center;
+            border: 1px solid blue;
+            color: #ffbd39;
+        }
+
+
+        .projects .projects2 {
+            text-align: center;
+            color: #ffbd39;
+        }
+
+
+        .projects .projects2 ol {
+            font-size: 30px;
+            color: wheat;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .images{display: flex;
+            justify-content: center;
+            align-items: center;
+        gap: 10px;}
+
+
+
+        @media only screen and (max-width:425px) {
+            navbar .navbar1 {
+                font-size: 25px;
+            }
+
+            .navbar2 {
+                display: none;
+            }
+
+            .hero .hero2 h2 {
+                color: #ffbd39;
+                font-size: 30px;
+            }
+
+            .hero {
+                margin: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+
+            .hero .hero2 h1 {
+                color: #ffbd39;
+                font-size: 30px;
+            }
+
+            .hero .hero2 p {
+                color: wheat;
+            }
+
+            .hero .hero2 h1 span {
+                color: white;
+                font-size: 30px;
+            }
+
+            .hero3 button {
+                margin: px;
+                border: 1px solid black;
+                height: 35px;
+                width: 100px;
+                color: black;
+                font-weight: bold;
+                font-size: 12px;
+                background-color: #ffbd39;
+                font-family: 'Afacad', sans-serif;
+            }
+
+            .hero3 .download button {
+                color: wheat;
+                border: 1px solid wheat;
+                background-color: rgb(5, 60, 161);
+            }
+
+            .milling {
+                border: 1px solid wheat;
+                margin: 10px;
+                display: flex;
+                align-items: center;
+                font-size: 50px;
+                font-weight: bold;
+                flex-wrap: wrap;
+            }
+
+
+
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <navbar>
+        <div class="navbar1">WELCOME TO MY PROTFOILO</div>
+        <div class="navbar2">
+            <ol>
+                <li><a href="">HOME</li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">RESUME</a></li>
+                <li><a href="">BLOGS</a></li>
+                <li><a href="">CONTACT</a></li>
+
+            </ol>
+        </div>
+    </navbar>
+
+    <section class="hero">
+        <div class="hero1"><img width="200px"
+                src="./WhatsApp Image 2024-02-09 at 10.56.56 PM.jpeg">
+        </div>
+
+
+
+        <div class="hero3">
+            <button>Hire Me</button>
+            <span class="download"><button>Download My Resume</button></span>
+
+
+        </div>
+
+        <br>
+        
+
+        <div class="images">
+            <div><a href="#"><img width="50px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQQ0tPXp7tle6nTwaRQXrjX4HB-bdsBqMXwjIwFT3pfJW2hju0ahOXbtb1HODBFOfWaG0&usqp=CAU"></a></div>
+            <div><a href="#"><img width="50px" src="https://static.vecteezy.com/system/resources/previews/017/743/717/original/instagram-icon-logo-free-png.png"></a></div>
+            <div><a href="#"><img width="50px" src="https://e7.pngegg.com/pngimages/753/965/png-clipart-linkedin-linkedin.png"></a></div>
+            <div><a href="#"><img width="50px" src="https://static.vecteezy.com/system/resources/thumbnails/027/395/710/small/twitter-brand-new-logo-3-d-with-new-x-shaped-graphic-of-the-world-s-most-popular-social-media-free-png.png"></a></div>
+
+        </div> 
+
+        <div class="hero2">
+
+            <h1><span>Hello !</span><br>I'm PLC Technician &<br><span>Web & Mobile Application
+                    Developer</span></h1>
+            <p>Hello, I'm Sajid Jawaid, an innovative PLC Technician, and proficient developer specializing in web and
+                mobile
+                applications. With a passion for crafting cutting-edge solutions, I thrive on transforming ideas into
+                functional, user-friendly tools that empower individuals and businesses alike.
+
+                My journey in technology began with a fascination for problem-solving and a drive to create impactful
+                solutions. Over the years, I've honed my skills in software development, mastering a diverse range of
+                programming languages and frameworks to stay at the forefront of industry trends.
+
+                As a tool maker, I excel in understanding user needs and translating them into intuitive interfaces and
+                robust functionalities. Whether it's streamlining workflows, enhancing productivity, or revolutionizing
+                user experiences, I am dedicated to delivering solutions that exceed expectations.
+
+                In the realm of web and mobile application development, I leverage my expertise to build scalable,
+                responsive, and feature-rich applications tailored to meet the unique requirements of each project. From
+                conceptualization to deployment, I am committed to delivering solutions that not only meet but exceed
+                client objectives.
+
+                With a keen eye for detail and a commitment to excellence, I take pride in my ability to deliver
+                projects on time and within budget, ensuring utmost client satisfaction. Beyond just coding, I believe
+                in fostering collaborative relationships, working closely with clients to understand their vision and
+                bring it to life through technology.</p>
+        </div>
+
+    </section>
+
+
+    <section class="education">
+        <fieldset>
+            <legend>
+                <h1>My Academic Qualifications</h1>
+            </legend>
+            <h2>Saylani Mass IT Training (Dec, 2023 - Present)</h2>
+            <p>Saylani Mass IT Training Center is a leading institution offering top-quality education in web and mobile
+                app development. With expert instructors and hands-on learning, students gain practical skills in HTML,
+                CSS, JavaScript, and frameworks like React and Angular. The center fosters a dynamic and collaborative
+                environment, preparing students for successful careers in the tech industry.</p>
+            <h2>indus university Karachi </h2>
+            <p>Three year Diploma associate degree with one
+                year specialization from indus university Karachi in electrical Engineering.</p>
+            <h2>saqib rose academy Secondary School (Passing Year 2009)</h2>
+            <p>Secondary School Certificate
+                Passing Year: 2009
+                From saqib rose academy Secondary School
+                First Division A Grade (Science Group)</p>
+        </fieldset><br>
+    </section>
+
+
+    <section class="education">
+        <fieldset>
+            <legend>
+                <h1>My Working Experience</h1>
+            </legend>
+            <h2>KIA Lucky Motors Corporation LTD (Feb, 2022 - Present)</h2>
+            <p>As a electrical,plc Technician and Pneumatics works.</p>
+            
+            </p>
+            <h2>mondelez international</h2>
+            <h3>electrical Technician (Jan, 2013 – Jan, 2018)</h3>
+            <p>As a skilled and experienced to electrical and plc </p>
+                             
+
+
+
+        </fieldset><br>
+
+    </section>
+
+    <fieldset class="projects">
+
+        <legend>
+            <h1>My Skills</h1>
+        </legend>
+        </div>
+        <div class="projects2">
+            <ol>
+                <li><img width="200px" src="https://www.lizenznu.de/wp-content/uploads/2023/03/OfficePNG.png">
+                    <p>Microsoft Office</p>
+                </li>
+                <li><img width="200px"
+                        src="https://agileviet.vn/content/images/size/w600/2020/12/1_cn_XBD307E3lObHk511Qqg.png">
+                    <p>Visual Studio Code</p>
+                </li>
+                <li><img width="200px"
+                    src="https://5.imimg.com/data5/SELLER/Default/2023/1/KY/OX/IR/3152180/pneumatic-trainer-kit-1000x1000-500x500.jpg"><p>PLC & <br>Pneumatics</p></li>
+                <li><img height="200px" width="250px"
+                    src="https://i.pinimg.com/564x/cb/c7/6a/cbc76a054c9599cc13d5d69910029a15.jpg"><p>Web & Mobile<br>Application Development</p></li>
+
+                
+            </ol>
+        </div>
+
+        </div>
+    </fieldset>
+
+</fieldset><br>
+
+</section>
+
+<fieldset class="projects">
+
+    <legend>
+        <h1>MY LEARNING SMIT PROJECTS</h1>
+    </legend>
+    </div>
+    <div class="projects2">
+        <ol>
+            <li><img width="200px" src="images/apple website.png">
+                <p>APPLE WEBSITE</p>
+            </li>
+            <li><img width="200px"
+                    src="images/saylani form website.png">
+                <p>SAYLANI FORM</p>
+            </li>
+            <li><img width="200px"
+                src="images/saylani website.png"><p>SAYLANI WEBSITE</p></li>
+            <li><img height="200px" width="250px"
+                src="images/upwork website.png"><p>UPWORK WEBSITE</p></li>
+
+            
+        </ol>
+    </div>
+
+    </div>
+</fieldset>
+
+
+
+</body>
+
+</html>
